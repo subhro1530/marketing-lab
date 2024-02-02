@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Partners from "@/components/Partners";
 import Reviews from "@/components/Reviews";
+import Quote from "@/components/Quote";
+import Solution from "@/components/Solution";
 
 const Home = () => {
   return (
@@ -11,7 +13,9 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <Partners />
-      <Reviews/>
+      <Reviews />
+      <Quote />
+      <Solution />
       {/* Add other components or sections here as needed */}
     </ChakraProvider>
   );

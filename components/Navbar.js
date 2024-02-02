@@ -35,6 +35,7 @@ const Navbar = () => {
     >
       <Flex
         as="nav"
+        marginTop="-85px"
         align="center"
         justify="space-between"
         wrap="wrap"
@@ -77,11 +78,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mr={4}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="#545454"
                 textTransform="capitalize"
-                
               >
                 Home
               </ChakraLink>
@@ -91,11 +91,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mr={4}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="#545454"
                 textTransform="capitalize"
-                
               >
                 About Us
               </ChakraLink>
@@ -105,11 +104,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mr={4}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="#545454"
                 textTransform="capitalize"
-                
               >
                 Case Study
               </ChakraLink>
@@ -119,11 +117,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mr={4}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="#545454"
                 textTransform="capitalize"
-                
               >
                 Services
               </ChakraLink>
@@ -133,11 +130,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mr={4}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="#545454"
                 textTransform="capitalize"
-                
               >
                 Blog
               </ChakraLink>
@@ -146,11 +142,10 @@ const Navbar = () => {
               <ChakraLink
                 as="a"
                 fontSize="16px"
-                _hover={{ color: "#545454" }}
-                color="#fdad34"
+                _hover={{ color: "black" }}
+                color="#545454"
                 textTransform="capitalize"
                 transition="0.5s ease-in-out"
-                
               >
                 Contact Us
               </ChakraLink>
@@ -163,8 +158,8 @@ const Navbar = () => {
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} color="white">
         <DrawerOverlay />
         <DrawerContent bg="rgba(150, 80, 20, 0.2)" backdropFilter="blur(10px)">
-          <DrawerCloseButton color="#fdad34" />
-          <DrawerHeader color="#fdad34">Menu</DrawerHeader>
+          <DrawerCloseButton color="orange" />
+          <DrawerHeader color="orange">Menu</DrawerHeader>
 
           <VStack>
             <NextLink href="/" passHref>
@@ -172,11 +167,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mb={2}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 Home
               </ChakraLink>
@@ -186,11 +180,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mb={2}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 About Us
               </ChakraLink>
@@ -200,11 +193,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mb={2}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 Case Study
               </ChakraLink>
@@ -214,11 +206,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mb={2}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 Services
               </ChakraLink>
@@ -228,11 +219,10 @@ const Navbar = () => {
                 as="a"
                 fontSize="16px"
                 mb={2}
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 Blog
               </ChakraLink>
@@ -241,11 +231,10 @@ const Navbar = () => {
               <ChakraLink
                 as="a"
                 fontSize="16px"
-                _hover={{ color: "#545454" }}
+                _hover={{ color: "black" }}
                 transition="0.5s ease-in-out"
-                color="#fdad34"
+                color="orange"
                 textTransform="capitalize"
-                
               >
                 Contact Us
               </ChakraLink>

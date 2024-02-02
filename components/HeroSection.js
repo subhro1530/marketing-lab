@@ -3,7 +3,12 @@ import { Box } from "@chakra-ui/react";
 
 const HeroSection = () => {
   return (
-    <Box height="100vh" overflow="hidden" position="relative">
+    <Box
+      height={{ base: "45vh", md: "105vh" }}
+      mt="85px"
+      width="100vw"
+      position="relative"
+    >
       <video
         autoPlay
         muted

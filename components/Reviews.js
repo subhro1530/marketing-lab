@@ -18,7 +18,9 @@ const ReviewCard = ({ imageSrc, heading, paragraph, name, designation }) => (
     transition="0.5s ease-in-out transform"
     _hover={{ transform: "scale(1.1)" }}
     mt={4}
-    w={{ base: "80%", md: "100%" }}
+    mx={5}
+    w={{ base: "82vw", md: "100vw" }}
+    overflow="hidden"
   >
     <Image
       src={imageSrc}
@@ -33,7 +35,7 @@ const ReviewCard = ({ imageSrc, heading, paragraph, name, designation }) => (
     <Text fontSize="md" fontWeight="normal">
       {paragraph}
     </Text>
-    <Text fontSize="sm" fontWeight="bold" fontStyle="italic" mt={5} >
+    <Text fontSize="sm" fontWeight="bold" fontStyle="italic" mt={5}>
       {name}
       <Text as="span" fontWeight="normal">
         , {designation}
@@ -64,9 +66,17 @@ const Reviews = () => {
         >
           BUT FALLS FLAT IN A COUPLE OF MONTHS
         </Text>
-        <Text>Here&apos;s How MarketingLab Is Different In Our Clients' Words</Text>
+        <Text>
+          Here&apos;s How MarketingLab Is Different In Our Clients' Words
+        </Text>
 
-        <HStack spacing={8} align="center" mt={8} w="100%">
+        <Box
+          display="flex"
+          flexDirection={{ base: "column", md: "row" }}
+          align="center"
+          mt={8}
+          w="100%"
+        >
           {/* Review Cards */}
           <ReviewCard
             imageSrc="/person1.png"
@@ -89,7 +99,7 @@ const Reviews = () => {
             name="Aishwarya"
             designation="AULI LIFESTYLE"
           />
-        </HStack>
+        </Box>
       </VStack>
     </Box>
   );
