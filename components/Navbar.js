@@ -39,7 +39,7 @@ const Navbar = () => {
         justify="space-between"
         wrap="wrap"
         padding="1.5rem"
-        bg="rgba(0, 0, 0, 0.6)" // Blackish color with alpha for transparency
+        bg="rgba(150, 80, 20, 0.1)" // Blackish color with alpha for transparency
         backdropFilter="blur(5px)"
         boxShadow="md"
         position="fixed"
@@ -75,11 +75,13 @@ const Navbar = () => {
             <NextLink href="/" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mr={4}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Home
               </ChakraLink>
@@ -87,11 +89,13 @@ const Navbar = () => {
             <NextLink href="/about" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mr={4}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 About Us
               </ChakraLink>
@@ -99,11 +103,13 @@ const Navbar = () => {
             <NextLink href="/case-study" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mr={4}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Case Study
               </ChakraLink>
@@ -111,11 +117,13 @@ const Navbar = () => {
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mr={4}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Services
               </ChakraLink>
@@ -123,11 +131,13 @@ const Navbar = () => {
             <NextLink href="/Blog" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mr={4}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Blog
               </ChakraLink>
@@ -135,9 +145,12 @@ const Navbar = () => {
             <NextLink href="/contact" passHref>
               <ChakraLink
                 as="a"
-                _hover={{ textDecoration: "2px underline" }}
-                color="#ffae34"
+                fontSize="16px"
+                _hover={{ color: "#545454" }}
+                color="#fdad34"
                 textTransform="capitalize"
+                transition="0.5s ease-in-out"
+                
               >
                 Contact Us
               </ChakraLink>
@@ -149,19 +162,21 @@ const Navbar = () => {
       {/* Sidebar for mobile */}
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} color="white">
         <DrawerOverlay />
-        <DrawerContent bgColor="rgba(0,0,0,.8)" backdropFilter="blur(10px)">
-          <DrawerCloseButton color="white" />
-          <DrawerHeader color="white">Menu</DrawerHeader>
+        <DrawerContent bg="rgba(150, 80, 20, 0.2)" backdropFilter="blur(10px)">
+          <DrawerCloseButton color="#fdad34" />
+          <DrawerHeader color="#fdad34">Menu</DrawerHeader>
 
           <VStack>
             <NextLink href="/" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mb={2}
-                _hover={{ textDecoration: "2px underline"}}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Home
               </ChakraLink>
@@ -169,11 +184,13 @@ const Navbar = () => {
             <NextLink href="/about" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mb={2}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 About Us
               </ChakraLink>
@@ -181,11 +198,13 @@ const Navbar = () => {
             <NextLink href="/case-study" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mb={2}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Case Study
               </ChakraLink>
@@ -193,11 +212,13 @@ const Navbar = () => {
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mb={2}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Services
               </ChakraLink>
@@ -205,11 +226,13 @@ const Navbar = () => {
             <NextLink href="/Blog" passHref>
               <ChakraLink
                 as="a"
+                fontSize="16px"
                 mb={2}
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Blog
               </ChakraLink>
@@ -217,10 +240,12 @@ const Navbar = () => {
             <NextLink href="/contact" passHref>
               <ChakraLink
                 as="a"
-                _hover={{ textDecoration: "2px underline" }}
-                transition="2s ease-in-and-out"
-                color="#ffae34"
+                fontSize="16px"
+                _hover={{ color: "#545454" }}
+                transition="0.5s ease-in-out"
+                color="#fdad34"
                 textTransform="capitalize"
+                
               >
                 Contact Us
               </ChakraLink>
