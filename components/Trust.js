@@ -1,87 +1,98 @@
 // trust.js
 
 import React from "react";
-import { Box, Text, Heading, Image } from "@chakra-ui/react";
+import { Box, Text, Heading, Image, Flex, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import NextLink from "next/link";
 
 const Trust = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
-  const trustSectionVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
 
   return (
     <motion.div
       ref={ref}
+      variants={containerVariants}
       initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={trustSectionVariants}
+      animate={inView ? "visible" : ""}
     >
       <Box
         p={{ base: 4, md: 8 }}
         textAlign="center"
-        border="2px solid rgba(0, 0, 0, 0.2)"
-        borderRadius="md"
+        bg="rgba(255, 255, 255, 0.9)"
+        color="rgba(0, 0, 0, 0.8)"
         mt={8}
+        border="2px solid #FFAE34"
+        borderRadius="10px"
       >
-        <Text fontSize="xl" mb={4}>
-          You Could Relate With Even A Single Point, Keep Reading.
-        </Text>
-        <Text fontSize="lg" mb={6}>
-          But, Here Comes The Big Question.
-        </Text>
-
-        <Box borderBottom="2px solid orange" mb={8}>
-          <Text fontSize="xl">
+        <Box p={4} bg="rgba(255, 255, 255, 0.7)" borderRadius="10px">
+          <Text fontSize="lg" mb={4} fontStyle={"italic"}>
+            You Could Relate With Even A Single Point, Keep Reading. But, Here
+            Comes The Big Question.
+          </Text>
+          <Text fontSize="lg" borderBottom="2px solid orange" pb={8}>
             Why should you even spend your time reading this any further and
             trusting us?
           </Text>
         </Box>
-
-        <Text fontSize="xl" mb={6}>
-          Let’s Talk About Some Real Numbers..
+        <Text fontSize="xl" mt={6}>
+          Let&apos;s Talk About Some Real Numbers...
         </Text>
-
-        <Heading
+        <Text
           fontSize={{ base: "2xl", md: "5xl" }}
-          color="black"
+          color="#FFAE34"
+          fontWeight="bold"
           display="inline-block"
           mr={4}
-          fontWeight="bold"
+          ml={4}
         >
-          5.6 Lacs
-        </Heading>
+          {" "}
+          5.6 Lacs To 52.18 Lacs{" "}
+        </Text>
         <Heading
           fontSize={{ base: "2xl", md: "5xl" }}
-          color="orange"
+          fontWeight=""
+          mt={2}
+          textTransform="uppercase"
+          color="black"
           display="inline-block"
-          fontWeight="bold"
         >
-          To 52.18 Lacs
-        </Heading>
-        <Text fontSize="xl" display="inline-block" ml={4} mb={8}>
           Within 120 Days
-        </Text>
-
-        <Box>
-          <Image
-            src="/trust-image1.jpg"
-            alt="Trust Image 1"
-            boxSize="300px"
-            mr={4}
-            mb={4}
-          />
-          <Image
-            src="/trust-image2.jpg"
-            alt="Trust Image 2"
-            boxSize="300px"
-            mb={4}
-          />
+        </Heading>{" "}
+        <Flex
+          justifyContent="center"
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          mt={8}
+        >
+          {/* Image 1 */}
+          <Box m={2}>
+            <Image src="/ad1.png" alt="Ad 1" height={800} />
+          </Box>
+          {/* Image 2 */}
+          <Box m={2}>
+            <Image src="/ad2.png" alt="Ad 2" height={800} />
+          </Box>
+        </Flex>
+        <Box mt={8}>
+          <NextLink href="https://tidycal.com/mintu/30-mins-discovery" passHref>
+            <Button
+              as="a"
+              variant="solid"
+              colorScheme="orange"
+              size="lg"
+              _hover={{ transform: "scale(1.1)" }}
+            >
+              SCHEDULE YOUR FREE AUDIT
+            </Button>
+          </NextLink>
         </Box>
       </Box>
     </motion.div>

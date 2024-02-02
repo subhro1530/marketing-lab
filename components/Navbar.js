@@ -58,7 +58,7 @@ const Navbar = () => {
             aria-label={isOpen ? "Close Menu" : "Open Menu"}
             onClick={isOpen ? onClose : onOpen}
             bg="transparent"
-            color="white"
+            color="black"
             _hover={{ bg: "transparent" }}
             _active={{ bg: "transparent" }}
           />

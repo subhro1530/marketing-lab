@@ -7,6 +7,8 @@ import Reviews from "@/components/Reviews";
 import Quote from "@/components/Quote";
 import Solution from "@/components/Solution";
 import Trust from "@/components/Trust";
+import Grow from "@/components/Grow";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +20,8 @@ const Home = () => {
       <Quote />
       <Solution />
       <Trust />
+      <Grow />
+      <Footer />
       {/* Add other components or sections here as needed */}
     </ChakraProvider>
   );
