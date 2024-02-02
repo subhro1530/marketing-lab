@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@chakra-ui/react";
 
 const HeroSection = () => {
@@ -8,6 +9,8 @@ const HeroSection = () => {
         muted
         loop
         preload="auto"
+        aria-label="Market Lab Video"
+        loading="lazy"
         style={{
           objectFit: "cover",
           width: "100%",
@@ -18,7 +21,7 @@ const HeroSection = () => {
           zIndex: "-1",
         }}
       >
-        <source src="/Market-lab.mp4" type="video/mp4" />
+        <source src="/vdo1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </Box>
