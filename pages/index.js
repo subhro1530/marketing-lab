@@ -11,6 +11,7 @@ import Grow from "@/components/Grow";
 import Footer from "@/components/Footer";
 import Questions from "@/components/Question";
 import Services from "@/components/Services";
+import Results from "@/components/Results";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Questions />
       <Trust />
       <Services />
+      <Results />
       <Grow />
       <Footer />
       {/* Add other components or sections here as needed */}
