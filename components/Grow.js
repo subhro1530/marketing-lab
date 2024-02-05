@@ -10,12 +10,11 @@ const Grow = () => {
       textAlign="center"
       bg="gray.100"
       color="rgba(0, 0, 0, 0.8)"
-      mt={8}
     >
       <Heading
         fontSize={{ base: "2xl", md: "4xl" }}
         fontWeight="bold"
-        color="black"
+        color="#333333"
         mb={2}
       >
         Grow Your Business

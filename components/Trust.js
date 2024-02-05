@@ -37,13 +37,18 @@ const Trust = () => {
             You Could Relate With Even A Single Point, Keep Reading. But, Here
             Comes The Big Question.
           </Text>
-          <Text fontSize="lg" borderBottom="2px solid orange" pb={8}>
+          <Text
+            fontSize="3xl"
+            borderBottom="2px solid orange"
+            color="black"
+            pb={8}
+          >
             Why should you even spend your time reading this any further and
             trusting us?
           </Text>
         </Box>
-        <Text fontSize="xl" mt={6}>
-          Let&apos;s Talk About Some Real Numbers...
+        <Text fontSize="3xl" mt={6}>
+          Enough of words, now let&apos;s talk in numbers, shall we?
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "5xl" }}

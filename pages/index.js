@@ -9,6 +9,8 @@ import Solution from "@/components/Solution";
 import Trust from "@/components/Trust";
 import Grow from "@/components/Grow";
 import Footer from "@/components/Footer";
+import Questions from "@/components/Question";
+import Services from "@/components/Services";
 
 const Home = () => {
   return (
@@ -19,7 +21,9 @@ const Home = () => {
       <Reviews />
       <Quote />
       <Solution />
+      <Questions />
       <Trust />
+      <Services />
       <Grow />
       <Footer />
       {/* Add other components or sections here as needed */}

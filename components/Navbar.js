@@ -71,7 +71,7 @@ const Navbar = () => {
           flexGrow={1}
           justify="flex-end"
         >
-          <Box ml="auto">
+          <Box ml="auto" >
             {/* Ensures links are at the rightmost */}
             <NextLink href="/" passHref>
               <ChakraLink
@@ -136,18 +136,6 @@ const Navbar = () => {
                 textTransform="capitalize"
               >
                 Blog
-              </ChakraLink>
-            </NextLink>
-            <NextLink href="/contact" passHref>
-              <ChakraLink
-                as="a"
-                fontSize="16px"
-                _hover={{ color: "black" }}
-                color="#545454"
-                textTransform="capitalize"
-                transition="0.5s ease-in-out"
-              >
-                Contact Us
               </ChakraLink>
             </NextLink>
           </Box>
@@ -225,18 +213,6 @@ const Navbar = () => {
                 textTransform="capitalize"
               >
                 Blog
-              </ChakraLink>
-            </NextLink>
-            <NextLink href="/contact" passHref>
-              <ChakraLink
-                as="a"
-                fontSize="16px"
-                _hover={{ color: "black" }}
-                transition="0.5s ease-in-out"
-                color="orange"
-                textTransform="capitalize"
-              >
-                Contact Us
               </ChakraLink>
             </NextLink>
           </VStack>
