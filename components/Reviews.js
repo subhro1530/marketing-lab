@@ -67,7 +67,7 @@ const Reviews = () => {
           BUT FALLS FLAT IN A COUPLE OF MONTHS
         </Text>
         <Text>
-          Here&apos;s How MarketingLab Is Different In Our Clients' Words
+          Here&apos;s How MarketingLab Is Different In Our Clients&apos; Words
         </Text>
 
         <Box
