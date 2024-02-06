@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <ChakraProvider>
       <Navbar />
-      <HeroSection />
+      <HeroSection/>
       <Partners />
       <Reviews />
       <Quote />

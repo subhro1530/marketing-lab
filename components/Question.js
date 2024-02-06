@@ -23,7 +23,7 @@ const Questions = () => {
         p={8}
         textAlign="center"
         borderRadius="md"
-        boxShadow="0px 4px 20px rgba(0, 0, 0, 0.1)"
+        // boxShadow="0px 4px 20px rgba(0, 0, 0, 0.1)"
       >
         <Heading
           fontSize={{ base: "4xl", md: "5xl" }}

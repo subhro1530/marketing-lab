@@ -1,4 +1,3 @@
-// pages/_app.js
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 // Import the Montserrat font from Google Fonts
