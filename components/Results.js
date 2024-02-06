@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Button, VStack } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, VStack, Image } from "@chakra-ui/react";
 
 const Results = () => {
   const sectionStyle = {
@@ -49,7 +49,9 @@ const ResultCard = ({ image, heading, description }) => (
       transform: "scale(1.05)",
     }}
   >
-    <img
+    <Image
+      height={400}
+      width={400}
       src={image}
       alt="Result Image"
       style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
