@@ -71,7 +71,7 @@ const Navbar = () => {
           flexGrow={1}
           justify="flex-end"
         >
-          <Box ml="auto" >
+          <Box ml="auto">
             {/* Ensures links are at the rightmost */}
             <NextLink href="/" passHref>
               <ChakraLink
@@ -79,6 +79,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mr={4}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="#545454"
                 textTransform="capitalize"
@@ -92,6 +95,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mr={4}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="#545454"
                 textTransform="capitalize"
@@ -105,6 +111,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mr={4}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="#545454"
                 textTransform="capitalize"
@@ -118,6 +127,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mr={4}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="#545454"
                 textTransform="capitalize"
@@ -131,6 +143,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mr={4}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="#545454"
                 textTransform="capitalize"
@@ -156,6 +171,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mb={2}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="orange"
                 textTransform="capitalize"
@@ -169,6 +187,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mb={2}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="orange"
                 textTransform="capitalize"
@@ -182,6 +203,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mb={2}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="orange"
                 textTransform="capitalize"
@@ -195,6 +219,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mb={2}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="orange"
                 textTransform="capitalize"
@@ -208,6 +235,9 @@ const Navbar = () => {
                 fontSize="16px"
                 mb={2}
                 _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
                 transition="0.5s ease-in-out"
                 color="orange"
                 textTransform="capitalize"

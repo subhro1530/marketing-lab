@@ -1,17 +1,41 @@
 // pages/index.js
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import Partners from "@/components/Partners";
-import Reviews from "@/components/Reviews";
-import Quote from "@/components/Quote";
-import Solution from "@/components/Solution";
-import Trust from "@/components/Trust";
-import Grow from "@/components/Grow";
-import Footer from "@/components/Footer";
-import Questions from "@/components/Question";
-import Services from "@/components/Services";
-import Results from "@/components/Results";
+const Navbar = dynamic(() => import("@/components/Navbar"), {
+  ssr: false,
+});
+const HeroSection = dynamic(() => import("@/components/HeroSection"), {
+  ssr: false,
+});
+const Partners = dynamic(() => import("@/components/Partners"), {
+  ssr: false,
+});
+const Reviews = dynamic(() => import("@/components/Reviews"), {
+  ssr: false,
+});
+const Quote = dynamic(() => import("@/components/Quote"), {
+  ssr: false,
+});
+const Solution = dynamic(() => import("@/components/Trust"), {
+  ssr: false,
+});
+const Trust = dynamic(() => import("@/components/Solution"), {
+  ssr: false,
+});
+const Grow = dynamic(() => import("@/components/Grow"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: false,
+});
+const Questions = dynamic(() => import("@/components/Questions"), {
+  ssr: false,
+});
+const Services = dynamic(() => import("@/components/Services"), {
+  ssr: false,
+});
+const Results = dynamic(() => import("@/components/Results"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
