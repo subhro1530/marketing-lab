@@ -1,5 +1,6 @@
 // pages/index.js
 import { ChakraProvider } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
 const Navbar = dynamic(() => import("@/components/Navbar"), {
   ssr: false,
 });
@@ -27,7 +28,7 @@ const Grow = dynamic(() => import("@/components/Grow"), {
 const Footer = dynamic(() => import("@/components/Footer"), {
   ssr: false,
 });
-const Questions = dynamic(() => import("@/components/Questions"), {
+const Question = dynamic(() => import("@/components/Question"), {
   ssr: false,
 });
 const Services = dynamic(() => import("@/components/Services"), {
@@ -46,7 +47,7 @@ const Home = () => {
       <Reviews />
       <Quote />
       <Solution />
-      <Questions />
+      <Question />
       <Trust />
       <Services />
       <Results />
