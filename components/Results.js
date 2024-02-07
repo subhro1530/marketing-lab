@@ -1,9 +1,19 @@
 import React from "react";
-import { Box, Heading, Text, Button, VStack, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Button,
+  VStack,
+  Image,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 
 const Results = () => {
   const sectionStyle = {
-    background: "linear-gradient(45deg, #FFAE34, #FFF)",
+    background:
+      "radial-gradient(circle, rgba(255, 206, 34, 0.5) 0%, rgba(255, 255, 255, 1) 100%)",
   };
 
   return (
@@ -11,12 +21,17 @@ const Results = () => {
       <Heading
         fontSize={{ base: "4xl", md: "5xl" }}
         fontWeight=""
-        color="#FFAE34"
+        color="gray.700"
+        mb={8}
       >
         Take a Look at How Our Result-Driven Approach Has Helped Our Clients
         Grow
       </Heading>
-      <VStack spacing={8} mt={8}>
+      <Grid
+        templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+        gap={8}
+        justifyContent="center"
+      >
         <ResultCard
           image="cs1.png"
           heading="From Baby Steps to Giant Leaps: How Rosada Baby Rocked the Revenue Charts"
@@ -32,7 +47,7 @@ const Results = () => {
           heading="Driving 12x Increased Revenue and An 342% Improved ROAS Within 4 Months"
           description="Indulgent. Luxurious. Organic – AULI isn’t just about the products that pamper."
         />
-      </VStack>
+      </Grid>
     </Box>
   );
 };
@@ -43,20 +58,13 @@ const ResultCard = ({ image, heading, description }) => (
     p={8}
     borderRadius="md"
     boxShadow="0px 4px 20px rgba(0, 0, 0, 0.1)"
-    w={{ base: "90%", md: "80%", lg: "60%" }}
     transition="transform 0.3s ease-in-out"
     _hover={{
       transform: "scale(1.05)",
     }}
   >
-    <Image
-      height={400}
-      width={400}
-      src={image}
-      alt="Result Image"
-      style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
-    />
-    <Heading fontSize="2xl" fontWeight="" mb={4} color="#FFAE34">
+    <Image src={image} alt="Result Image" borderRadius="8px" mb={4} />
+    <Heading fontSize="xl" fontWeight="" mb={4} color="#FFAE34">
       {heading}
     </Heading>
     <Text fontSize="lg" color="#333333">

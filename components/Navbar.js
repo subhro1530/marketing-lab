@@ -1,4 +1,3 @@
-// src/components/Navbar.js
 import {
   Box,
   Flex,
@@ -18,13 +17,20 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import NextLink from "next/link";
+import { useRef } from "react";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const resultsRef = useRef(null);
 
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
+  };
+
+  const handleCaseStudyClick = () => {
+    resultsRef.current.scrollIntoView({ behavior: "smooth" });
+    onClose(); // Close the mobile menu if it's open
   };
 
   return (
@@ -48,8 +54,7 @@ const Navbar = () => {
         zIndex="1"
       >
         <Flex align="center">
-          <Image src="/logo.png" alt="Logo" width={180} mr={4} />{" "}
-          {/* Responsive logo size */}
+          <Image src="/logo.png" alt="Logo" width={180} mr={4} />
         </Flex>
 
         <Box display={{ base: "block", md: "none" }}>
@@ -72,7 +77,6 @@ const Navbar = () => {
           justify="flex-end"
         >
           <Box ml="auto">
-            {/* Ensures links are at the rightmost */}
             <NextLink href="/" passHref>
               <ChakraLink
                 as="a"
@@ -105,22 +109,20 @@ const Navbar = () => {
                 About Us
               </ChakraLink>
             </NextLink>
-            <NextLink href="/case-study" passHref>
-              <ChakraLink
-                as="a"
-                fontSize="16px"
-                mr={4}
-                _hover={{ color: "black" }}
-                fontWeight="bold"
-                fontFamily="sans-serif"
-                pr={5}
-                transition="0.5s ease-in-out"
-                color="#545454"
-                textTransform="capitalize"
-              >
-                Case Study
-              </ChakraLink>
-            </NextLink>
+            <ChakraLink
+              fontSize="16px"
+              mr={4}
+              fontWeight="bold"
+              fontFamily="sans-serif"
+              pr={5}
+              transition="0.5s ease-in-out"
+              color="#545454"
+              textTransform="capitalize"
+              cursor="pointer"
+              onClick={handleCaseStudyClick} // Smooth scroll to results section
+            >
+              Case Study
+            </ChakraLink>
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
@@ -197,22 +199,20 @@ const Navbar = () => {
                 About Us
               </ChakraLink>
             </NextLink>
-            <NextLink href="/case-study" passHref>
-              <ChakraLink
-                as="a"
-                fontSize="16px"
-                mb={2}
-                _hover={{ color: "black" }}
-                fontWeight="bold"
-                fontFamily="sans-serif"
-                pr={5}
-                transition="0.5s ease-in-out"
-                color="orange"
-                textTransform="capitalize"
-              >
-                Case Study
-              </ChakraLink>
-            </NextLink>
+            <ChakraLink
+              fontSize="16px"
+              mb={2}
+              fontWeight="bold"
+              fontFamily="sans-serif"
+              pr={5}
+              transition="0.5s ease-in-out"
+              color="orange"
+              textTransform="capitalize"
+              cursor="pointer"
+              onClick={handleCaseStudyClick} // Smooth scroll to results section
+            >
+              Case Study
+            </ChakraLink>
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
