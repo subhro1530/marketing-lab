@@ -24,6 +24,8 @@ const Trust = () => {
       animate={inView ? "visible" : ""}
     >
       <Box
+        width="100vw"
+        overflowX="hidden"
         p={{ base: 4, md: 8 }}
         textAlign="center"
         bg="rgba(255, 255, 255, 0.9)"

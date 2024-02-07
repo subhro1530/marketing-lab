@@ -88,6 +88,8 @@ const Questions = () => {
 const Question = ({ title, description }) => {
   return (
     <Box
+      width="100vw"
+      overflowX="hidden"
       color="dark"
       p={6}
       borderRadius="md"

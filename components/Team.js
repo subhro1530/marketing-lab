@@ -27,7 +27,14 @@ const Team = () => {
   ];
 
   return (
-    <Box py={8} px={5} textAlign="center" background="white">
+    <Box
+      width="100vw"
+      overflowX="hidden"
+      py={8}
+      px={5}
+      textAlign="center"
+      background="white"
+    >
       <Heading as="h1" fontSize={50} mb={8}>
         Our Team
       </Heading>

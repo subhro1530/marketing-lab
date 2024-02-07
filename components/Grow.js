@@ -4,6 +4,8 @@ import { Box, Text, Heading, Image, Flex } from "@chakra-ui/react";
 const Grow = () => {
   return (
     <Box
+      overflowX="hidden"
+      width="100vw"
       p={{ base: 4, md: 8 }}
       textAlign="center"
       bg="radial-gradient(circle, rgba(255, 206, 34, 0.5) 0%, rgba(255, 255, 255, 1) 100%)"

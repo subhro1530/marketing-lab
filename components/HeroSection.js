@@ -6,6 +6,7 @@ const HeroSection = () => {
     <Box
       height={{ base: "45vh", md: "105vh" }}
       mt="85px"
+      overflowX="hidden"
       width="100vw"
       position="relative"
     >

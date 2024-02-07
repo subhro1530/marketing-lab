@@ -52,7 +52,8 @@ const Navbar = () => {
         backdropFilter="blur(5px)"
         boxShadow="md"
         position="fixed"
-        width="100%"
+        width="100vw"
+        overflowX="hidden"
         zIndex="1"
       >
         <Flex align="center">

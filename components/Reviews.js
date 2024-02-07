@@ -19,7 +19,7 @@ const ReviewCard = ({ imageSrc, heading, paragraph, name, designation }) => (
     _hover={{ transform: "scale(1.1)" }}
     mt={4}
     mx={5}
-    w={{ base: "82vw", md: "100vw" }}
+    w={{ base: "100vw", md: "100vw" }}
     overflow="hidden"
   >
     <Image

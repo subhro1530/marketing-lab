@@ -16,6 +16,8 @@ const Services = () => {
       py={16}
       textAlign="center"
       color="white"
+      width="100vw"
+      overflowX="hidden"
       style={sectionStyle}
     >
       <VStack spacing={8}>

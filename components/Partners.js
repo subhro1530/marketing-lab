@@ -45,11 +45,12 @@ const Partners = () => {
   return (
     <animated.div style={{ opacity }}>
       <Box
+        width="100vw"
+        overflowX="hidden"
         bg="#f0eeeb"
         p={{ base: 4, md: 8 }}
         height={{ base: "40vh", md: "auto" }}
         textAlign="center"
-        overflow="hidden"
       >
         <Heading
           mt={5}

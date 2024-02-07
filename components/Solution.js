@@ -9,6 +9,8 @@ const Solution = () => {
       p={{ base: 4, md: 8 }}
       textAlign="center"
       bgImage="url('bg1.png')"
+      width="100vw"
+      overflowX="hidden"
       backgroundSize="cover"
       color="rgba(0, 0, 0, 0.66)"
       height={{ base: "auto", md: "auto" }}

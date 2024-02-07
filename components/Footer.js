@@ -8,6 +8,8 @@ const Footer = () => {
     <Box
       p={4}
       textAlign="center"
+      width="100vw"
+      overflowX="hidden"
       bg="gray.800"
       color="white"
       display="flex"

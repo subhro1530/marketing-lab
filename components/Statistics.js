@@ -14,7 +14,8 @@ const Statistics = () => {
         position="fixed"
         top="90"
         left="0"
-        width="100%"
+        width="100vw"
+        overflowX="hidden"
         height="100%"
         zIndex="-1"
         backgroundImage="url('https://www.leveluphcs.com/hubfs/LevelUP%20HCS%20-%20Blog%20-%20Diversity%20Statistics%20for%20Every%20HR%20Practitioner.png')" // Replace 'dark-bg.jpg' with your image path

@@ -37,7 +37,7 @@ const Quote = () => {
   };
 
   return (
-    <Box style={quoteSectionStyle}>
+    <Box style={quoteSectionStyle} width="100vw" overflowX="hidden">
       <Text style={quoteMarkStyle} fontSize={{ base: "3xl", md: "6xl" }}>
         “
       </Text>

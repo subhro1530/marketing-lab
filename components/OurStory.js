@@ -5,7 +5,14 @@ const OurStory = () => {
   const fontSize = useBreakpointValue({ base: "md", md: "xl" });
 
   return (
-    <Box bg="#fea022" color="white" py={12} px={4}>
+    <Box
+      bg="#fea022"
+      width="100vw"
+      overflowX="hidden"
+      color="white"
+      py={12}
+      px={4}
+    >
       <Box maxW="800px" mx="auto" textAlign="center">
         <Heading mb={8} fontSize={{ base: "3xl", md: "5xl" }} fontWeight="">
           Our Story

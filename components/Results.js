@@ -17,7 +17,15 @@ const Results = () => {
   };
 
   return (
-    <Box id="results" py={16} px={5} textAlign="center" style={sectionStyle}>
+    <Box
+      id="results"
+      width="100vw"
+      overflowX="hidden"
+      py={16}
+      px={5}
+      textAlign="center"
+      style={sectionStyle}
+    >
       <Heading
         fontSize={{ base: "4xl", md: "5xl" }}
         fontWeight=""
