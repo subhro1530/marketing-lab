@@ -23,7 +23,7 @@ const Footer2 = () => {
             Your Digital Marketing Partner: We Transform Dreams into Results.
           </Text>
           <Text fontSize="lg" mb={4}>
-            Let's Grow Together.
+            Let&apos;s Grow Together.
           </Text>
           <Flex alignItems="center" mb={4}>
             <Link mr={4} _hover={{ color: "#ffb135" }}>
