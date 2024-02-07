@@ -29,8 +29,10 @@ const Navbar = () => {
   };
 
   const handleCaseStudyClick = () => {
-    resultsRef.current.scrollIntoView({ behavior: "smooth" });
-    onClose(); // Close the mobile menu if it's open
+    if (resultsRef.current) {
+      resultsRef.current.scrollIntoView({ behavior: "smooth" });
+      onClose(); // Close the mobile menu if it's open
+    }
   };
 
   return (
