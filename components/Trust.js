@@ -33,7 +33,7 @@ const Trust = () => {
       >
         <Box p={4} bg="rgba(255, 255, 255, 0.7)" borderRadius="10px">
           <Text fontSize="xl" mt={6}>
-            Enough of words, now let's talk in numbers, shall we?
+            Enough of words, now let&apos;s talk in numbers, shall we?
           </Text>
           <Text
             fontSize={{ base: "4xl", md: "5xl" }}

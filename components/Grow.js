@@ -128,7 +128,7 @@ const Grow = () => {
           </Heading>
           <Text fontSize={{ base: "md", md: "lg" }} fontStyle="italic">
             At the end of the call, you will walk away with a proven strategy
-            that's custom-made to help you grow your business.
+            that&apos;s custom-made to help you grow your business.
           </Text>
         </Box>
       </Flex>
