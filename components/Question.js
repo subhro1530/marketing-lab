@@ -13,7 +13,7 @@ const Questions = () => {
     <animated.div
       style={{
         ...fadeIn,
-        background: "url('bg2.png') center center/cover no-repeat",
+        background: " center center/cover no-repeat",
         backdropFilter: "blur(5px)",
         webkitBackdropFilter: "blur(10px)",
       }}
@@ -30,7 +30,7 @@ const Questions = () => {
           fontSize={{ base: "4xl", md: "5xl" }}
           fontWeight="normal"
           mb={10}
-          color="dark"
+          color="orange"
         >
           Aiming For an Improved ROAS?
         </Heading>
@@ -96,7 +96,7 @@ const Question = ({ title, description }) => {
       bgColor="rgba(255,255,255,0.8)"
       boxShadow="0px 4px 10px rgba(0, 0, 0, 0.2)"
     >
-      <Heading fontSize="xl" fontWeight="" mb={2}>
+      <Heading color="orange" fontSize="xl" fontWeight="" mb={2}>
         {title}
       </Heading>
       <Text fontSize="md">{description}</Text>

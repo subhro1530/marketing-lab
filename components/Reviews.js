@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  VStack,
-  Text,
-  HStack,
-  Image,
-  Center,
-} from "@chakra-ui/react";
+import { Box, Heading, VStack, Text, Image, Center } from "@chakra-ui/react";
 
 const ReviewCard = ({
   imageSrc,
@@ -18,10 +10,10 @@ const ReviewCard = ({
   ...rest
 }) => (
   <Box
-    bg="gray.200"
-    color="rgba(80, 0, 0, 0.8)"
-    bgColor="orange.100"
-    p="3% 4%"
+    bg="orange.100" // translucent orange background
+    color="orange.700"
+    px={4}
+    py={12}
     borderRadius="md"
     textAlign="center"
     display="flex"
@@ -33,22 +25,34 @@ const ReviewCard = ({
     mt={4}
     mx={5}
     overflow="hidden"
+    height={{ base: "auto" }} // constant height
+    width={{ base: "90%", md: "30%" }} // constant width
     {...rest}
   >
     <Image
       src={imageSrc}
       alt="Reviewer"
-      border="5px solid rgba(100,50,0,0.9)"
+      border="3px solid "
       boxSize="90px"
       borderRadius="full"
     />
-    <Heading fontSize="3xl" fontWeight="bold" mt={2} mb={4}>
+    <Heading
+      fontSize={{ base: "xl", md: "3xl" }}
+      fontWeight="bold"
+      mt={2}
+      mb={4}
+    >
       {heading}
     </Heading>
-    <Text fontSize="md" fontWeight="normal">
+    <Text fontSize={{ base: "md", md: "lg" }} fontWeight="normal">
       {paragraph}
     </Text>
-    <Text fontSize="sm" fontWeight="bold" fontStyle="italic" mt={5}>
+    <Text
+      fontSize={{ base: "sm", md: "md" }}
+      fontWeight="bold"
+      fontStyle="italic"
+      mt={5}
+    >
       {name}
       <Text as="span" fontWeight="normal">
         , {designation}
@@ -61,13 +65,17 @@ const Reviews = () => {
   return (
     <Center>
       <Box
-        bg="white"
-        p={{ base: 4, md: 8 }}
+        bgImage={{ base: "url('/bg4.png')", md: "url('/bg4.png')" }} // background image
+        bgSize="cover" // cover the entire container
+        px={10}
+        pb={20}
+        pt={40}
+        bgPosition="fixed"
         textAlign="center"
         color="rgba(0, 0, 0, 0.8)"
-        mt={8}
-        maxWidth="100vw" // Set maximum width to 100vw
-        overflowX="hidden" // Hide horizontal overflow
+        mt={0} // removed margin top
+        maxWidth="100vw"
+        height={{ base: "auto", md: "auto" }}
       >
         <VStack spacing={4} align="center">
           <Heading

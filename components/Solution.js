@@ -1,5 +1,3 @@
-// solution.js
-
 import React from "react";
 import { Box, Text, Heading, Image, Flex } from "@chakra-ui/react";
 
@@ -8,7 +6,7 @@ const Solution = () => {
     <Box
       p={{ base: 4, md: 8 }}
       textAlign="center"
-      bgImage="url('bg1.png')"
+      bgImage={{ base: "bg11.png", md: "url('/bg1.png')" }}
       width="100vw"
       overflowX="hidden"
       backgroundSize="cover"
@@ -48,10 +46,18 @@ const Solution = () => {
       >
         {/* Solution Images */}
         <Box m={4}>
-          <Image src="/sol1.svg" alt="Broken Funnel" boxSize="250px" />
+          <Image
+            borderRadius={20}
+            src="/sol1.svg"
+            alt="Broken Funnel"
+            boxSize={{ base: "150px", md: "250px" }}
+          />
           <Text
             fontSize="lg"
             mt={2}
+            borderRadius={10}
+            px={3}
+            py={2}
             fontWeight="bold"
             borderBottom="2px solid orange"
             borderTop="2px solid orange"
@@ -62,10 +68,18 @@ const Solution = () => {
           </Text>
         </Box>
         <Box m={4}>
-          <Image src="/sol2.svg" alt="Abandoned Carts" boxSize="250px" />
+          <Image
+            borderRadius={20}
+            src="/sol2.svg"
+            alt="Abandoned Carts"
+            boxSize={{ base: "150px", md: "250px" }}
+          />
           <Text
             fontSize="lg"
             mt={2}
+            borderRadius={10}
+            px={3}
+            py={2}
             fontWeight="bold"
             borderBottom="2px solid orange"
             borderTop="2px solid orange"
@@ -76,10 +90,18 @@ const Solution = () => {
           </Text>
         </Box>
         <Box m={4}>
-          <Image src="/sol3.svg" alt="Failing ROAS" boxSize="250px" />
+          <Image
+            borderRadius={20}
+            src="/sol3.svg"
+            alt="Failing ROAS"
+            boxSize={{ base: "150px", md: "250px" }}
+          />
           <Text
             fontSize="lg"
             mt={2}
+            borderRadius={10}
+            px={3}
+            py={2}
             fontWeight="bold"
             borderBottom="2px solid orange"
             borderTop="2px solid orange"
@@ -87,24 +109,6 @@ const Solution = () => {
             borderRight="2px solid orange"
           >
             FAILING ROAS
-          </Text>
-        </Box>
-        <Box m={4}>
-          <Image
-            src="/sol4.svg"
-            alt="Too Dependent on Credit"
-            boxSize="250px"
-          />
-          <Text
-            fontSize="lg"
-            mt={2}
-            fontWeight="bold"
-            borderBottom="2px solid orange"
-            borderTop="2px solid orange"
-            borderLeft="2px solid orange"
-            borderRight="2px solid orange"
-          >
-            TOO DEPENDENT ON CRED
           </Text>
         </Box>
       </Flex>

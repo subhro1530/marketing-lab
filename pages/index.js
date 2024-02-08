@@ -42,14 +42,14 @@ const Home = () => {
   return (
     <ChakraProvider>
       <Navbar />
-      <HeroSection/>
+      <HeroSection />
       <Partners />
       <Reviews />
       <Quote />
-      <Solution />
-      <Trust />
       <Question />
       <Services />
+      <Solution />
+      <Trust />
       <Results />
       <Grow />
       <Footer />
