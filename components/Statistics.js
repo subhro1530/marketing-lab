@@ -27,7 +27,8 @@ const Statistics = () => {
       {/* Content */}
       <Box
         bg="rgba(0,0,20,.5)"
-        height="60vh"
+        height="auto"
+        py={10}
         display="flex"
         flexDirection="column"
         justifyContent="center"
