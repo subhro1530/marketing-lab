@@ -79,21 +79,21 @@ const Reviews = () => {
       >
         <VStack spacing={4} align="center">
           <Heading
-            fontSize={{ base: "xl", md: "3xl" }}
+            fontSize={{ base: "2xl", md: "3xl" }}
             fontWeight="bold"
             pb={0}
           >
             EVERY AGENCY PROMISES THE MOON
+            <Text
+              fontSize={{ base: "2xl", md: "5xl" }}
+              pb={2}
+              color="#FFAE34"
+              display="inline-block"
+            >
+              BUT FALLS FLAT IN A COUPLE OF MONTHS
+            </Text>
           </Heading>
-          <Text
-            fontSize={{ base: "2xl", md: "5xl" }}
-            mt={-4}
-            pb={2}
-            color="#FFAE34"
-            display="inline-block"
-          >
-            BUT FALLS FLAT IN A COUPLE OF MONTHS
-          </Text>
+
           <Text>
             Here&apos;s How MarketingLab Is Different In Our Clients&apos; Words
           </Text>

@@ -48,7 +48,7 @@ const Partners = () => {
         <Box
           bg="#f0eeeb"
           p={{ base: 4, md: 8 }}
-          height={{ base: "60vh", md: "auto" }}
+          height={{ base: "30vh", md: "auto" }}
           textAlign="center"
         >
           <Heading

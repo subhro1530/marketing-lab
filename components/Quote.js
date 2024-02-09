@@ -7,7 +7,7 @@ const Quote = () => {
   const quoteBgImage = "/bg_quote.png";
 
   const quoteSectionStyle = {
-    background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(${quoteBgImage})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(${quoteBgImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",

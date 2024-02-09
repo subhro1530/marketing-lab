@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Text, Heading, Image, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Heading,
+  Image,
+  Flex,
+  Button,
+  Center,
+} from "@chakra-ui/react";
 
 const Solution = () => {
   return (
@@ -45,73 +53,94 @@ const Solution = () => {
         mb={5}
       >
         {/* Solution Images */}
-        <Box m={4}>
-          <Image
-            borderRadius={20}
-            src="/sol1.svg"
-            alt="Broken Funnel"
-            boxSize={{ base: "150px", md: "250px" }}
-          />
-          <Text
-            fontSize="lg"
-            mt={2}
-            borderRadius={10}
-            px={3}
-            py={2}
-            fontWeight="bold"
-            borderBottom="2px solid orange"
-            borderTop="2px solid orange"
-            borderLeft="2px solid orange"
-            borderRight="2px solid orange"
-          >
-            BROKEN FUNNEL
-          </Text>
-        </Box>
-        <Box m={4}>
-          <Image
-            borderRadius={20}
-            src="/sol2.svg"
-            alt="Abandoned Carts"
-            boxSize={{ base: "150px", md: "250px" }}
-          />
-          <Text
-            fontSize="lg"
-            mt={2}
-            borderRadius={10}
-            px={3}
-            py={2}
-            fontWeight="bold"
-            borderBottom="2px solid orange"
-            borderTop="2px solid orange"
-            borderLeft="2px solid orange"
-            borderRight="2px solid orange"
-          >
-            ABANDONED CARTS
-          </Text>
-        </Box>
-        <Box m={4}>
-          <Image
-            borderRadius={20}
-            src="/sol3.svg"
-            alt="Failing ROAS"
-            boxSize={{ base: "150px", md: "250px" }}
-          />
-          <Text
-            fontSize="lg"
-            mt={2}
-            borderRadius={10}
-            px={3}
-            py={2}
-            fontWeight="bold"
-            borderBottom="2px solid orange"
-            borderTop="2px solid orange"
-            borderLeft="2px solid orange"
-            borderRight="2px solid orange"
-          >
-            FAILING ROAS
-          </Text>
-        </Box>
+        <Center flexDirection="column">
+          <Box m={4}>
+            <Image
+              borderRadius={20}
+              src="/sol1.svg"
+              ml={{ base: "10px" }}
+              alt="Broken Funnel"
+              boxSize={{ base: "150px", md: "250px" }}
+            />
+            <Text
+              fontSize="lg"
+              mt={2}
+              borderRadius={10}
+              px={3}
+              py={2}
+              fontWeight="bold"
+              borderBottom="2px solid orange"
+              borderTop="2px solid orange"
+              borderLeft="2px solid orange"
+              borderRight="2px solid orange"
+            >
+              NO SCALABILITY
+            </Text>
+          </Box>
+        </Center>
+
+        <Center flexDirection="column">
+          <Box m={4}>
+            <Image
+              borderRadius={20}
+              ml={{ base: "10px" }}
+              src="/sol2.svg"
+              alt="Abandoned Carts"
+              boxSize={{ base: "150px", md: "250px" }}
+            />
+            <Text
+              fontSize="lg"
+              mt={2}
+              borderRadius={10}
+              px={3}
+              py={2}
+              fontWeight="bold"
+              borderBottom="2px solid orange"
+              borderTop="2px solid orange"
+              borderLeft="2px solid orange"
+              borderRight="2px solid orange"
+            >
+              TERRIBLE ROAS
+            </Text>
+          </Box>
+        </Center>
+
+        <Center flexDirection="column">
+          <Box m={4}>
+            <Image
+              ml={{ base: "15px" }}
+              borderRadius={20}
+              src="/sol3.svg"
+              alt="Failing ROAS"
+              boxSize={{ base: "150px", md: "250px" }}
+            />
+            <Text
+              fontSize="lg"
+              mt={2}
+              borderRadius={10}
+              px={3}
+              py={2}
+              fontWeight="bold"
+              borderBottom="2px solid orange"
+              borderTop="2px solid orange"
+              borderLeft="2px solid orange"
+              borderRight="2px solid orange"
+            >
+              NO PROFITABILITY
+            </Text>
+          </Box>
+        </Center>
       </Flex>
+      {/* Button */}
+      <Button
+        colorScheme="orange"
+        as="a"
+        href="https://tidycal.com/mintu/30-mins-discovery"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Schedule a Call
+      </Button>
     </Box>
   );
 };
