@@ -73,7 +73,8 @@ const Reviews = () => {
         bgPosition="fixed"
         textAlign="center"
         color="rgba(0, 0, 0, 0.8)"
-        mt={0} // removed margin top
+        mt={-20} // removed margin top
+        zIndex="-20"
         maxWidth="100vw"
         height={{ base: "auto", md: "auto" }}
       >
@@ -82,14 +83,10 @@ const Reviews = () => {
             fontSize={{ base: "2xl", md: "3xl" }}
             fontWeight="bold"
             pb={0}
+            pt={20}
           >
             EVERY AGENCY PROMISES THE MOON
-            <Text
-              fontSize={{ base: "2xl", md: "5xl" }}
-              pb={2}
-              color="#FFAE34"
-              display="inline-block"
-            >
+            <Text fontSize={{ base: "2xl", md: "5xl" }} pb={2} color="#FFAE34">
               BUT FALLS FLAT IN A COUPLE OF MONTHS
             </Text>
           </Heading>

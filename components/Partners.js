@@ -93,6 +93,8 @@ const Partners = () => {
                 <Box
                   key={index}
                   boxSize="4"
+                  zIndex={{ base: "-10", md: "0" }}
+                  mt="-200px"
                   mx={1}
                   bg={index === activeIndex ? "orange.500" : "gray.200"}
                   borderRadius="full"
