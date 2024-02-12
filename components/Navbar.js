@@ -112,20 +112,22 @@ const Navbar = () => {
                 About Us
               </ChakraLink>
             </NextLink>
-            <ChakraLink
-              fontSize="16px"
-              mr={4}
-              fontWeight="bold"
-              fontFamily="sans-serif"
-              pr={5}
-              transition="0.5s ease-in-out"
-              color="#545454"
-              textTransform="capitalize"
-              cursor="pointer"
-              onClick={handleCaseStudyClick} // Smooth scroll to results section
-            >
-              Case Study
-            </ChakraLink>
+            <NextLink href="/case-study" passHref>
+              <ChakraLink
+                as="a"
+                fontSize="16px"
+                mr={4}
+                _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
+                transition="0.5s ease-in-out"
+                color="#545454"
+                textTransform="capitalize"
+              >
+                Case Study
+              </ChakraLink>
+            </NextLink>
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
@@ -202,20 +204,22 @@ const Navbar = () => {
                 About Us
               </ChakraLink>
             </NextLink>
-            <ChakraLink
-              fontSize="16px"
-              mb={2}
-              fontWeight="bold"
-              fontFamily="sans-serif"
-              pr={5}
-              transition="0.5s ease-in-out"
-              color="orange"
-              textTransform="capitalize"
-              cursor="pointer"
-              onClick={handleCaseStudyClick} // Smooth scroll to results section
-            >
-              Case Study
-            </ChakraLink>
+            <NextLink href="/case-study" passHref>
+              <ChakraLink
+                as="a"
+                fontSize="16px"
+                mb={2}
+                _hover={{ color: "black" }}
+                fontWeight="bold"
+                fontFamily="sans-serif"
+                pr={5}
+                transition="0.5s ease-in-out"
+                color="orange"
+                textTransform="capitalize"
+              >
+                Case Study
+              </ChakraLink>
+            </NextLink>
             <NextLink href="/services" passHref>
               <ChakraLink
                 as="a"
