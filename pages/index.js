@@ -25,7 +25,7 @@ const Trust = dynamic(() => import("@/components/Solution"), {
 const Grow = dynamic(() => import("@/components/Grow"), {
   ssr: false,
 });
-const Footer = dynamic(() => import("@/components/Footer"), {
+const Footer2 = dynamic(() => import("@/components/Footer2"), {
   ssr: false,
 });
 const Question = dynamic(() => import("@/components/Question"), {
@@ -52,7 +52,7 @@ const Home = () => {
       <Trust />
       <Results />
       <Grow />
-      <Footer />
+      <Footer2 />
       {/* Add other components or sections here as needed */}
     </ChakraProvider>
   );

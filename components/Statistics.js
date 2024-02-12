@@ -5,6 +5,7 @@ const Statistics = () => {
   return (
     <Box
       // py={12}
+      height="auto"
       textAlign="center"
       fontFamily="monteserrat,sans-serif"
       position="relative" // Ensure relative positioning for child elements
@@ -18,7 +19,7 @@ const Statistics = () => {
         overflowX="hidden"
         height="100%"
         zIndex="-1"
-        backgroundImage="url('https://www.leveluphcs.com/hubfs/LevelUP%20HCS%20-%20Blog%20-%20Diversity%20Statistics%20for%20Every%20HR%20Practitioner.png')" // Replace 'dark-bg.jpg' with your image path
+        backgroundImage="url('https://4kwallpapers.com/images/wallpapers/ipados-stock-orange-white-background-ipad-ios-13-hd-5120x2880-1551.jpg')" // Replace 'dark-bg.jpg' with your image path
         backgroundSize="cover"
         backgroundPosition="center"
         opacity="0.8"
@@ -28,7 +29,7 @@ const Statistics = () => {
       <Box
         bg="rgba(0,0,20,.5)"
         height="auto"
-        py={10}
+        py="150px"
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -76,7 +77,10 @@ const StatCard = ({ title, value, colorScheme }) => {
   return (
     <Box
       p={4}
-      bg="white"
+      bg="rgb(255,255,255,0.9)"
+      transition="0.2s ease-in-out"
+      cursor="pointer"
+      _hover={{ bg: "rgb(255,255,255,1)" }}
       borderRadius="md"
       boxShadow="md"
       borderWidth="1px"

@@ -107,20 +107,12 @@ const Footer2 = () => {
                     href="/services"
                     _hover={{ color: "#ffb135", textDecoration: "none" }}
                   >
-                    Performance Marketing
-                  </Link>
-                </Text>
-                <Text fontSize="md" mb={2}>
-                  <Link
-                    href="/services"
-                    _hover={{ color: "#ffb135", textDecoration: "none" }}
-                  >
                     Performance Marketing - Google
                   </Link>
                 </Text>
                 <Text fontSize="md" mb={2}>
                   <Link
-                    href="#"
+                    href="/services"
                     _hover={{ color: "#ffb135", textDecoration: "none" }}
                   >
                     Performance Marketing – Meta
@@ -149,30 +141,30 @@ const Footer2 = () => {
                     About Us
                   </Link>
                 </Text>
-                <Text fontSize="md" mb={2}>
+                {/* <Text fontSize="md" mb={2}>
                   <Link
                     href="#"
                     _hover={{ color: "#ffb135", textDecoration: "none" }}
                   >
                     Blogs
                   </Link>
-                </Text>
+                </Text> */}
                 <Text fontSize="md" mb={2}>
                   <Link
-                    href="#"
+                    href="/case-study"
                     _hover={{ color: "#ffb135", textDecoration: "none" }}
                   >
                     Case Studies
                   </Link>
                 </Text>
-                <Text fontSize="md" mb={2}>
+                {/* <Text fontSize="md" mb={2}>
                   <Link
                     href="#"
                     _hover={{ color: "#ffb135", textDecoration: "none" }}
                   >
                     Career
                   </Link>
-                </Text>
+                </Text> */}
               </Box>
             </Box>
             <Box flex="1">

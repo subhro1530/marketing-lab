@@ -1,40 +1,66 @@
 import React from "react";
-import { Box, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  useBreakpointValue,
+  Flex,
+  Button,
+} from "@chakra-ui/react";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const OurStory = () => {
   const fontSize = useBreakpointValue({ base: "md", md: "xl" });
 
   return (
     <Box
-      bg="#fea022"
-      width="100vw"
-      overflowX="hidden"
-      color="white"
-      py={12}
+      bg="#f5f5f5"
+      color="gray.700"
+      py="100px"
       px={4}
+      textAlign="center"
+      mb={0}
+      width="100vw"
+      mx="auto"
     >
-      <Box maxW="800px" mx="auto" textAlign="center">
-        <Heading mb={8} fontSize={{ base: "3xl", md: "5xl" }} fontWeight="">
-          Our Story
+      <Box maxW="800px" mx="auto" textAlign="left">
+        <Heading mb={8} fontSize={{ base: "3xl", md: "5xl" }} color="#fe9022">
+          About Us
         </Heading>
-        <Text fontSize={fontSize} mb={8}>
-          Based in vibrant Bangalore 🌆 and Kolkata 🏙, our dynamic team thrives
-          on urban energy and diversity, shaping creative strategies inspired by
-          these pulsating cities. With experience as our guiding star ⭐,
-          we&apos;re dedicated to delivering authentic value and real results.
-          Our approach? Fluff-Free Digital Marketing - cutting through noise
-          with clear, impactful strategies. Are you a business owner seeking
-          growth through advertising? Join us on a success-driven journey.
+        <Text fontSize={fontSize} mb={4} color="gray.600">
+          Based out of Kolkata, MarketingLab is a performance marketing agency
+          that helps D2C brands scale on their website and marketplaces.
         </Text>
-        <Text fontSize={fontSize}>
-          We&apos;re here to elevate your digital presence. Creativity 🎨,
-          innovation 💡, and strategic prowess fuel our mission to propel your
-          brand. No matter your location, whether the tech hub of Bangalore or
-          cultural core of Kolkata, we&apos;re equipped to drive your marketing
-          goals. Every decision we make is anchored in measurable outcomes 📊,
-          ensuring your success. Ready to invest in growth? Let&apos;s embark on
-          a digital marketing adventure together! 🚀💼🌟
+        <Text fontSize={fontSize} mb={4} color="gray.600">
+          We&apos;re NOT a website development agency or a social media agency
+          that also does Performance Marketing.
         </Text>
+        <Text fontSize={fontSize} mb={4} color="gray.600">
+          We do ONLY Performance Marketing and our numbers and client results
+          prove that we&apos;re super good at it.
+        </Text>
+        <Text fontSize={fontSize} mb={4} color="gray.600">
+          With experience as our guiding star ⭐, we&apos;re dedicated to
+          delivering authentic value and real results. Our approach? Fluff-Free
+          Performance Marketing - cutting through noise with clear, impactful
+          strategies.
+        </Text>
+        <Text fontSize={fontSize} mb={4} color="gray.600">
+          Every decision we make is data driven and anchored in measurable
+          outcomes, ensuring your success. Ready to invest in growth?
+        </Text>
+        <Flex align="center" justify="center">
+          <Button
+            px={5}
+            py={5}
+            mt={10}
+            colorScheme="orange"
+            rightIcon={<MdKeyboardArrowRight />}
+            fontSize={fontSize}
+          >
+            Let’s Talk!
+          </Button>
+        </Flex>
       </Box>
     </Box>
   );

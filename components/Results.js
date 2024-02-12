@@ -18,8 +18,7 @@ const Results = () => {
       style={sectionStyle}
     >
       <Heading fontSize={{ base: "4xl", md: "5xl" }} color="gray.700" mb={8}>
-        Take a Look at How Our Result-Driven Approach Has Helped Our Clients
-        Grow
+        Proven Solutions, Real-World Results
       </Heading>
       <Grid
         templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
@@ -30,19 +29,19 @@ const Results = () => {
           image="cs1.png"
           heading="From Baby Steps to Giant Leaps: How Rosada Baby Rocked the Revenue Charts"
           description="Rosada is a brand engaged in designing, manufacturing and selling Personalised gifts."
-          link="/rosada-baby"
+          link="https://www.marketinglab.in/case-studies/rosada-baby/"
         />
         <ResultCard
           image="cs2.png"
           heading="Dorje Achieves 103% Surge in Sessions, and 85% Return Customer Rate"
           description="We left our jobs to revive our family’s heritage Selim Hill Tea."
-          link="/dorje"
+          link="https://www.marketinglab.in/case-studies/dorje-teas/"
         />
         <ResultCard
           image="cs3.png"
           heading="Driving 12x Increased Revenue and An 342% Improved ROAS Within 4 Months"
           description="Indulgent. Luxurious. Organic – AULI isn’t just about the products that pamper."
-          link="/auli"
+          link="https://www.marketinglab.in/case-studies/driving-12x-increased-revenue-and-an-342-improved-roas-within-4-months/"
         />
       </Grid>
     </Box>

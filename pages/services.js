@@ -1,5 +1,3 @@
-// pages/services.js
-
 import {
   Box,
   Image,
@@ -11,16 +9,11 @@ import {
 } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import NextLink from "next/link";
-import Link from "next/link";
-const Footer2 = dynamic(() => import("@/components/Footer2"), {
-  ssr: false,
-});
-const Navbar = dynamic(() => import("@/components/Navbar"), {
-  ssr: false,
-});
+import Navbar from "@/components/Navbar";
+import Footer2 from "@/components/Footer2";
 
 const ServiceCard = ({ image, heading, description }) => (
-  <Box p={6} borderWidth="1px" borderRadius="md" boxShadow="md">
+  <Box p={6} borderRadius="md" boxShadow="md">
     <Image src={`/${image}`} alt={heading} />
     <Heading mt={4} fontSize="xl">
       {heading}
@@ -71,18 +64,24 @@ const Services = () => {
   return (
     <Box>
       <Navbar />
-      <Image mt="85px" src="/services.png" alt="Services" width="100%" />
-      <Grid
-        templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
-        gap={6}
-        p={6}
+      <Box
+        bgImage="url('https://4kwallpapers.com/images/wallpapers/ipados-stock-orange-white-background-ipad-ios-13-hd-5120x2880-1551.jpg')"
+        bgAttachment="fixed"
+        bgSize="cover"
       >
-        {services.map((service, index) => (
-          <GridItem key={index}>
-            <ServiceCard {...service} />
-          </GridItem>
-        ))}
-      </Grid>
+        <Image mt="85px" src="/services.png" alt="Services" width="100%" />
+        <Grid
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          gap={6}
+          p={6}
+        >
+          {services.map((service, index) => (
+            <GridItem bgColor="rgba(255,255,255,0.5)" key={index}>
+              <ServiceCard {...service} />
+            </GridItem>
+          ))}
+        </Grid>
+      </Box>
       <Footer2 />
     </Box>
   );
