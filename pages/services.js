@@ -65,7 +65,7 @@ const Services = () => {
     <Box>
       <Navbar />
       <Box
-        bgImage="url('https://4kwallpapers.com/images/wallpapers/ipados-stock-orange-white-background-ipad-ios-13-hd-5120x2880-1551.jpg')"
+        bgImage="url('https://img.freepik.com/free-photo/collage-finance-banner-concept_23-2150608848.jpg?w=1060&t=st=1707826463~exp=1707827063~hmac=b74dff8519c24de716eedac6d6192b9db712d86be2635ef3aad4c7591f10dd0a')"
         bgAttachment="fixed"
         bgSize="cover"
       >

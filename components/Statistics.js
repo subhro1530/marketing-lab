@@ -19,7 +19,7 @@ const Statistics = () => {
         overflowX="hidden"
         height="100%"
         zIndex="-1"
-        backgroundImage="url('https://4kwallpapers.com/images/wallpapers/ipados-stock-orange-white-background-ipad-ios-13-hd-5120x2880-1551.jpg')" // Replace 'dark-bg.jpg' with your image path
+        backgroundImage="url('bg001.png')" // Replace 'dark-bg.jpg' with your image path
         backgroundSize="cover"
         backgroundPosition="center"
         opacity="0.8"

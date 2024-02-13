@@ -6,6 +6,7 @@ import {
   useBreakpointValue,
   Flex,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
@@ -50,16 +51,18 @@ const OurStory = () => {
           outcomes, ensuring your success. Ready to invest in growth?
         </Text>
         <Flex align="center" justify="center">
-          <Button
-            px={5}
-            py={5}
-            mt={10}
-            colorScheme="orange"
-            rightIcon={<MdKeyboardArrowRight />}
-            fontSize={fontSize}
-          >
-            Let’s Talk!
-          </Button>
+          <Link href="https://tidycal.com/mintu/30-mins-discovery" isExternal>
+            <Button
+              px={20}
+              py={10}
+              mt={10}
+              colorScheme="orange"
+              rightIcon={<MdKeyboardArrowRight />}
+              fontSize={fontSize}
+            >
+              Let&apos;s Talk!
+            </Button>
+          </Link>
         </Flex>
       </Box>
     </Box>
