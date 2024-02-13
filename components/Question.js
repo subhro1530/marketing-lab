@@ -123,7 +123,7 @@ const Question = ({ title, description, icon }) => {
       color="dark"
       p={6}
       borderRadius="md"
-      mt={4}
+      
       display="flex"
       flexDirection="column"
       alignItems="center"
