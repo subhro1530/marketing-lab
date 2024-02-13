@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Text, Heading, Image, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Link,
+  Button,
+  Heading,
+  Image,
+  Flex,
+} from "@chakra-ui/react";
 
 const Grow = () => {
   return (
@@ -131,6 +139,13 @@ const Grow = () => {
             that&apos;s custom-made to help you grow your business.
           </Text>
         </Box>
+      </Flex>
+      <Flex align="center" justify="center">
+        <Link href="https://tidycal.com/mintu/30-mins-discovery" isExternal>
+          <Button px={20} py={6} mt={10} colorScheme="orange" fontSize="lg">
+            Reach Us
+          </Button>
+        </Link>
       </Flex>
     </Box>
   );

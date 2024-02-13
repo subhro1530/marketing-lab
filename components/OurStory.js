@@ -25,7 +25,12 @@ const OurStory = () => {
       mx="auto"
     >
       <Box maxW="800px" mx="auto" textAlign="left">
-        <Heading mb={8} fontSize={{ base: "3xl", md: "5xl" }} color="#fe9022">
+        <Heading
+          mb={8}
+          mt={{ base: "-70px", md: "" }}
+          fontSize={{ base: "3xl", md: "5xl" }}
+          color="#fe9022"
+        >
           About Us
         </Heading>
         <Text fontSize={fontSize} mb={4} color="gray.600">
@@ -54,11 +59,11 @@ const OurStory = () => {
           <Link href="https://tidycal.com/mintu/30-mins-discovery" isExternal>
             <Button
               px={20}
-              py={10}
+              py={6}
               mt={10}
               colorScheme="orange"
               rightIcon={<MdKeyboardArrowRight />}
-              fontSize={fontSize}
+              fontSize="lg"
             >
               Let&apos;s Talk!
             </Button>
