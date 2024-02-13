@@ -54,7 +54,7 @@ const Solution = () => {
       >
         {/* Solution Images */}
         <Center flexDirection="column">
-          <Box m={4}>
+          <Box mt={{ md: "0px", base: "-20px" }}>
             <Image
               borderRadius={20}
               src="/sol1.svg"
@@ -80,7 +80,7 @@ const Solution = () => {
         </Center>
 
         <Center flexDirection="column">
-          <Box m={4}>
+          <Box mt={{ md: "0px", base: "-20px" }}>
             <Image
               borderRadius={20}
               ml={{ base: "10px" }}
@@ -106,7 +106,7 @@ const Solution = () => {
         </Center>
 
         <Center flexDirection="column">
-          <Box m={4}>
+          <Box mt={{ md: "0px", base: "-20px" }}>
             <Image
               ml={{ base: "15px" }}
               borderRadius={20}

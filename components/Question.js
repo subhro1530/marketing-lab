@@ -123,7 +123,6 @@ const Question = ({ title, description, icon }) => {
       color="dark"
       p={6}
       borderRadius="md"
-      
       display="flex"
       flexDirection="column"
       alignItems="center"
@@ -131,6 +130,7 @@ const Question = ({ title, description, icon }) => {
       backdropFilter="blur(5px)"
       bgColor="rgba(255,255,255,0.8)"
       boxShadow="0px 4px 10px rgba(0, 0, 0, 0.2)"
+      mb={{ md: 0, base: 5 }}
     >
       <Box
         mb={2}
