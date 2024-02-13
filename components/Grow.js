@@ -143,7 +143,7 @@ const Grow = () => {
       <Flex align="center" justify="center">
         <Link href="https://tidycal.com/mintu/30-mins-discovery" isExternal>
           <Button px={20} py={6} mt={10} colorScheme="orange" fontSize="lg">
-            Reach Us
+            CTA
           </Button>
         </Link>
       </Flex>
