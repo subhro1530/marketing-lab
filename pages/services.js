@@ -64,11 +64,7 @@ const Services = () => {
   return (
     <Box>
       <Navbar />
-      <Box
-        bgImage="url('https://img.freepik.com/free-photo/collage-finance-banner-concept_23-2150608848.jpg?w=1060&t=st=1707826463~exp=1707827063~hmac=b74dff8519c24de716eedac6d6192b9db712d86be2635ef3aad4c7591f10dd0a')"
-        bgAttachment="fixed"
-        bgSize="cover"
-      >
+      <Box bgImage="url('freepic.png')" bgAttachment="fixed" bgSize="cover">
         <Image mt="85px" src="/services.png" alt="Services" width="100%" />
         <Grid
           templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
@@ -76,7 +72,11 @@ const Services = () => {
           p={6}
         >
           {services.map((service, index) => (
-            <GridItem bgColor="rgba(255,255,255,0.5)" key={index}>
+            <GridItem
+              bgColor="rgba(255,255,255,0.8)"
+              borderRadius="md"
+              key={index}
+            >
               <ServiceCard {...service} />
             </GridItem>
           ))}
