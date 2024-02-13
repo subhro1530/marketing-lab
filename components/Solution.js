@@ -60,7 +60,7 @@ const Solution = () => {
               src="/sol1.svg"
               ml={{ base: "10px" }}
               alt="Broken Funnel"
-              boxSize={{ base: "150px", md: "250px" }}
+              boxSize={{ base: "250px", md: "250px" }}
             />
             <Text
               fontSize="lg"
@@ -86,7 +86,7 @@ const Solution = () => {
               ml={{ base: "10px" }}
               src="/sol2.svg"
               alt="Abandoned Carts"
-              boxSize={{ base: "150px", md: "250px" }}
+              boxSize={{ base: "250px", md: "250px" }}
             />
             <Text
               fontSize="lg"
@@ -112,7 +112,7 @@ const Solution = () => {
               borderRadius={20}
               src="/sol3.svg"
               alt="Failing ROAS"
-              boxSize={{ base: "150px", md: "250px" }}
+              boxSize={{ base: "250px", md: "250px" }}
             />
             <Text
               fontSize="lg"
