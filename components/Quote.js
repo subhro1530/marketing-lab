@@ -4,7 +4,7 @@ import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 
 const Quote = () => {
-  const quoteBgImage = "/bg_quote.png";
+  const quoteBgImage = "/bg001.png";
 
   const quoteSectionStyle = {
     background: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(${quoteBgImage})`,

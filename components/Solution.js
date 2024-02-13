@@ -132,15 +132,6 @@ const Solution = () => {
         </Center>
       </Flex>
       {/* Button */}
-      <Button
-        colorScheme="orange"
-        as="a"
-        href="https://tidycal.com/mintu/30-mins-discovery"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Schedule a Call
-      </Button>
     </Box>
   );
 };
