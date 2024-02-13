@@ -108,7 +108,7 @@ const Questions = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button colorScheme="orange" size="lg" mt={8}>
+          <Button colorScheme="orange" size="lg" px={10} py={8} mt="80px">
             Schedule A Free Strategy Call
           </Button>
         </a>

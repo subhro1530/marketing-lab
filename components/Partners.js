@@ -88,7 +88,7 @@ const Partners = () => {
               ))}
             </Flex>
 
-            <Center position="absolute" bottom="10px" width="100%">
+            <Center position="absolute" bottom="-50px" width="100%">
               {partnerImages.map((_, index) => (
                 <Box
                   key={index}

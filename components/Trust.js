@@ -76,6 +76,8 @@ const Trust = () => {
           <NextLink href="https://tidycal.com/mintu/30-mins-discovery" passHref>
             <Button
               as="a"
+              mt="-100px"
+              mb="50px"
               variant="solid"
               colorScheme="orange"
               size="lg"
