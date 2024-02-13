@@ -16,7 +16,7 @@ const generatePartnerImagePaths = (count) => {
 
 const Partners = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const partnerImages = generatePartnerImagePaths(3);
+  const partnerImages = generatePartnerImagePaths(4);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -33,7 +33,7 @@ const Partners = () => {
   };
 
   const slideHeight = "500px";
-  const slideWidth = `calc(100% / ${Math.min(partnerImages.length, 3)})`;
+  const slideWidth = `calc(100% / ${Math.min(partnerImages.length, 4)})`;
 
   // React-spring animations
   const { opacity } = useSpring({
@@ -43,11 +43,15 @@ const Partners = () => {
   });
 
   return (
-    <Box maxWidth="100vw" overflow="hidden">
+    <Box
+      maxWidth="100vw"
+      height={{ base: "auto", md: "80vh" }}
+      overflow="hidden"
+    >
       <animated.div style={{ opacity }}>
         <Box
           bg="#f0eeeb"
-          p={{ base: 4, md: 8 }}
+          p={{ base: 1, md: 8 }}
           height={{ base: "30vh", md: "auto" }}
           textAlign="center"
         >
@@ -94,7 +98,7 @@ const Partners = () => {
                   key={index}
                   boxSize="4"
                   zIndex={{ base: "-10", md: "0" }}
-                  mt="-200px"
+                  mt="-290px"
                   mx={1}
                   bg={index === activeIndex ? "orange.500" : "gray.200"}
                   borderRadius="full"
