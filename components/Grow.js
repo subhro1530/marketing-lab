@@ -142,7 +142,14 @@ const Grow = () => {
       </Flex>
       <Flex align="center" justify="center">
         <Link href="https://tidycal.com/mintu/30-mins-discovery" isExternal>
-          <Button px={20} py={6} mt={10} colorScheme="orange" fontSize="lg">
+          <Button
+            px={10}
+            py={6}
+            mt={10}
+            mb={10}
+            colorScheme="orange"
+            fontSize="lg"
+          >
             Schedule Your Free Audit
           </Button>
         </Link>

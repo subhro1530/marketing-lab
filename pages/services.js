@@ -14,8 +14,8 @@ import Footer2 from "@/components/Footer2";
 
 const ServiceCard = ({ image, heading, description }) => (
   <Box p={6} borderRadius="md" boxShadow="md">
-    <Image src={`/${image}`} alt={heading} />
-    <Heading mt={4} fontSize="xl">
+    {/* <Image src={`/${image}`} alt={heading} /> */}
+    <Heading mt={4} color="#dd6b20" fontSize="xl">
       {heading}
     </Heading>
     <Text mt={2}>{description}</Text>
@@ -73,7 +73,8 @@ const Services = () => {
         >
           {services.map((service, index) => (
             <GridItem
-              bgColor="rgba(255,255,255,0.8)"
+              alignItems="center"
+              bgColor="rgba(255,255,255,0.9)"
               borderRadius="md"
               key={index}
             >

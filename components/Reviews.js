@@ -73,7 +73,7 @@ const Reviews = () => {
         bgPosition="fixed"
         textAlign="center"
         color="rgba(0, 0, 0, 0.8)"
-        mt={-20} // removed margin top
+        mt={{ base: "-200px", md: "-20" }} // removed margin top
         zIndex="-20"
         maxWidth="100vw"
         height={{ base: "auto", md: "auto" }}

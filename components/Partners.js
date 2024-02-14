@@ -52,8 +52,9 @@ const Partners = () => {
         <Box
           bg="#f0eeeb"
           p={{ base: 1, md: 8 }}
-          height={{ base: "30vh", md: "auto" }}
+          height={{ base: "35vh", md: "auto" }}
           textAlign="center"
+          zIndex={50}
         >
           <Heading
             mt={5}
@@ -70,11 +71,20 @@ const Partners = () => {
             color="#FFAE34"
             display="inline-block"
           >
-            INCLUDING 12 SHARK TANK BRANDS{" "}
+            <Text>INCLUDING 12</Text> <br></br>
+            <Text mt={{ base: "-45px", md: "-90px" }}>
+              SHARK TANK BRANDS
+            </Text>{" "}
           </Text>
 
-          <Box position="relative" height={slideHeight} overflow="hidden">
+          <Box
+            mt={{ base: "40px", md: "0" }}
+            position="relative"
+            height={slideHeight}
+            overflow="hidden"
+          >
             <Flex
+              zIndex={80}
               width={`${partnerImages.length * 100}%`}
               transform={`translateX(-${
                 activeIndex * (100 / partnerImages.length)
@@ -97,8 +107,7 @@ const Partners = () => {
                 <Box
                   key={index}
                   boxSize="4"
-                  zIndex={{ base: "-10", md: "0" }}
-                  mt="-290px"
+                  zIndex={{ base: "-10", md: "100" }}
                   mx={1}
                   bg={index === activeIndex ? "orange.500" : "gray.200"}
                   borderRadius="full"
