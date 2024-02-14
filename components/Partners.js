@@ -66,7 +66,7 @@ const Partners = () => {
           </Heading>
           <Text
             fontSize={{ base: "2xl", md: "5xl" }}
-            mt={-4}
+            mt={-2}
             pb={2}
             color="#FFAE34"
             display="inline-block"
