@@ -4,7 +4,14 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer2 = () => {
   return (
-    <Box bg="gray.800" py={10} px={8} borderTop="1px solid #eaeaea">
+    <Box
+      bg="gray.800"
+      width="100vw"
+      overflowX="hidden"
+      py={10}
+      px={8}
+      borderTop="1px solid #eaeaea"
+    >
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         justifyContent="space-between"
